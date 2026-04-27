@@ -10,3 +10,5 @@ El proyecto ya está creado y con tailwind instalado, pero sin estilos ni funcio
 - Crea componentes para las tarjetas o cualquier elemento que se repita
 - Maneja carpetas y subcarpetas acorde a las páginas que estás trabajando
 - No hagas configuraciones ni instalaciones de librerías sin consultar primero.
+- Respondeme siempre en español
+- Crea los planes y las tareas en español
