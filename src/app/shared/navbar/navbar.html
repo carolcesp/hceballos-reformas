@@ -1,5 +1,4 @@
-<header
-  class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
+<header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
   <nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
     <div class="flex items-center gap-3">
       <img alt="Logo HCeballos" class="h-14 w-auto" src="/logo-hceballos.png" />
@@ -11,19 +10,18 @@
         routerLink="/" [routerLinkActiveOptions]="{exact: true}"
         routerLinkActive="!text-secondary !border-secondary">Inicio</a>
       <a class="font-headline font-semibold tracking-tight transition-colors border-b-2 pb-1 border-transparent text-white/60 hover:text-white"
-        routerLink="/galeria"
-        routerLinkActive="!text-secondary !border-secondary">Galería</a>
+        routerLink="/galeria" routerLinkActive="!text-secondary !border-secondary">Galería</a>
       <a class="font-headline font-semibold tracking-tight transition-colors border-b-2 pb-1 border-transparent text-white/60 hover:text-white"
-        routerLink="/contacto"
-        routerLinkActive="!text-secondary !border-secondary">Contacto</a>
+        routerLink="/contacto" routerLinkActive="!text-secondary !border-secondary">Contacto</a>
     </div>
 
     <div class="flex items-center gap-4">
-      <div class="hidden sm:flex bg-white/10 rounded-full p-1 items-center gap-1">
+      <!-- TODO: Implementar cambio de idioma -->
+      <!-- <div class="hidden sm:flex bg-white/10 rounded-full p-1 items-center gap-1">
         <span
           class="px-2 py-0.5 text-[10px] font-bold tracking-widest bg-white rounded-full text-black">ES</span>
         <span class="px-2 py-0.5 text-[10px] font-bold tracking-widest text-white/50">EN</span>
-      </div>
+      </div> -->
       <button class="md:hidden p-2 text-white hover:bg-white/10 rounded-lg" (click)="toggleMenu()">
         <span class="material-symbols-outlined">menu</span>
       </button>

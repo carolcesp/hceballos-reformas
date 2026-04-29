@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SeoService } from '../../core/seo.service';
+import { RouterModule } from '@angular/router';
 
 export interface GalleryItem {
   id: number;
@@ -15,11 +17,22 @@ export interface GalleryItem {
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './gallery.html',
   styleUrls: ['./gallery.css']
 })
 export class GalleryComponent {
+  private seo = inject(SeoService);
+
+  constructor() {
+    this.seo.updateMeta({
+      title: 'Proyectos y Galería | HCeballos Reformas Madrid',
+      description: 'Descubre nuestra galería de proyectos de reformas en Madrid. Cocinas, baños, salones y reformas integrales con acabados de alta calidad.',
+      keywords: 'galería reformas, proyectos reformas madrid, antes y después reformas, fotos cocinas, fotos baños',
+      url: 'https://www.hceballos.com/galeria'
+    });
+  }
+
   galleryItems: GalleryItem[] = [
     {
       id: 1,
