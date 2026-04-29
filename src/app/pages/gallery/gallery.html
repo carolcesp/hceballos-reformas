@@ -1,0 +1,51 @@
+<main class="max-w-7xl mx-auto px-8 py-16">
+  <!-- Hero Title Section -->
+  <div class="mb-16 border-l-4 border-secondary pl-8">
+    <h1 class="text-6xl font-extrabold font-headline tracking-tighter text-white mb-4">Proyectos que <span
+        class="text-corporate-blue">Inspiran</span></h1>
+    <p class="text-white/50 max-w-2xl text-lg leading-relaxed">
+      Nuestra trayectoria se define por la precisión técnica y la excelencia estética. Cada imagen representa un
+      compromiso cumplido con la calidad y el diseño contemporáneo.
+    </p>
+  </div>
+
+  <!-- Asymmetric Bento Gallery Grid -->
+  <div class="grid grid-cols-12 gap-6 auto-rows-[300px]">
+
+    <div *ngFor="let item of galleryItems"
+      [class]="item.gridClass + ' group relative overflow-hidden rounded-xl bg-surface-container border border-white/5 shadow-sm transition-all duration-500 hover:shadow-xl hover:shadow-secondary/10'">
+      <img [src]="item.imageUrl" [alt]="item.altText"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+      <div
+        class="blueprint-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+        <span *ngIf="item.category"
+          class="text-xs font-bold tracking-[0.2em] text-white/70 uppercase mb-2">{{item.category}}</span>
+        <h3 class="text-3xl font-headline font-bold text-white uppercase">{{item.title}}</h3>
+        <p *ngIf="item.subtitle" class="text-white/60 text-xs mt-1">{{item.subtitle}}</p>
+
+        <div *ngIf="item.tags" class="mt-4 flex gap-4">
+          <span *ngFor="let tag of item.tags"
+            class="text-[10px] text-white/80 font-mono border border-white/30 px-2 py-1 uppercase">{{tag}}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA Section -->
+  <section
+    class="mt-24 bg-surface-container p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8 border-l-8 border-secondary">
+    <div>
+      <h2 class="text-3xl font-headline font-extrabold text-white">¿Listo para transformar tu <span class="text-corporate-blue">espacio</span>?</h2>
+      <p class="text-white/50 mt-2">Nuestros profesionales están preparados para dar vida a tu próximo proyecto.
+      </p>
+    </div>
+    <div class="flex gap-4">
+      <a routerLink="/contacto"
+        class="px-8 py-4 bg-secondary text-white font-headline font-bold rounded-md hover:brightness-110 active:scale-95 transition-all text-center">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </section>
+</main>

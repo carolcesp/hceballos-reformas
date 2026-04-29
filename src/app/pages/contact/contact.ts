@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ContactInfoService } from '../../core/contact-info.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule],
   templateUrl: './contact.html',
 })
 export class ContactComponent {
-  // Logic for the visual form will go here in the future
+  readonly contact = inject(ContactInfoService);
 }
