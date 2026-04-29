@@ -2,20 +2,16 @@
   <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
     <div class="flex flex-col items-center md:items-start gap-2">
       <span class="font-headline font-bold text-white text-xl">HCeballos Reformas</span>
-      <p class="font-body text-sm text-white/40">© 2024 HCeballos Reformas. Excelencia Arquitectónica.</p>
-    </div>
-    
-    <div class="flex gap-8">
-      <a class="font-body text-sm text-white/40 hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="/privacidad">Privacidad</a>
-      <a class="font-body text-sm text-white/40 hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="/aviso-legal">Aviso Legal</a>
-      <a class="font-body text-sm text-white/40 hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="/cookies">Cookies</a>
+      <p class="font-body text-sm text-white/40">© 2024 HCeballos Reformas. Todos los derechos reservados.</p>
     </div>
 
     <div class="flex gap-4">
-      <button (click)="share()" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/60 cursor-pointer hover:bg-secondary hover:text-white transition-all">
+      <button (click)="share()"
+        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/60 cursor-pointer hover:bg-secondary hover:text-white transition-all">
         <span class="material-symbols-outlined text-xl">share</span>
       </button>
-      <a [href]="contact.mapsUrl" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/60 cursor-pointer hover:bg-secondary hover:text-white transition-all">
+      <a [href]="contact.mapsUrl" target="_blank"
+        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/60 cursor-pointer hover:bg-secondary hover:text-white transition-all">
         <span class="material-symbols-outlined text-xl">location_on</span>
       </a>
     </div>
