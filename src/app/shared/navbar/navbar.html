@@ -23,15 +23,13 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div *ngIf="mobileMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/5 shadow-xl flex flex-col px-6 py-4 gap-4">
+  <div *ngIf="mobileMenuOpen"
+    class="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/5 shadow-xl flex flex-col px-6 py-4 gap-4">
+    <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors" routerLink="/"
+      [routerLinkActiveOptions]="{exact: true}" routerLinkActive="!text-secondary" (click)="toggleMenu()">Inicio</a>
     <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors"
-      routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="!text-secondary"
-      (click)="toggleMenu()">Inicio</a>
+      routerLink="/galeria" routerLinkActive="!text-secondary" (click)="toggleMenu()">Galería</a>
     <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors"
-      routerLink="/galeria" routerLinkActive="!text-secondary"
-      (click)="toggleMenu()">Galería</a>
-    <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors"
-      routerLink="/contacto" routerLinkActive="!text-secondary"
-      (click)="toggleMenu()">Contacto</a>
+      routerLink="/contacto" routerLinkActive="!text-secondary" (click)="toggleMenu()">Contacto</a>
   </div>
 </header>

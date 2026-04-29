@@ -38,16 +38,16 @@ export class GalleryComponent {
       id: 1,
       category: 'Proyecto Residencial',
       title: 'Cocina Moderna',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCqs-EjQ2xnDG5KQUV8MNzXsteNWTxcevFxt3_mS0BrqLqouar1vgW0NoMEqnIT0WOZ_7x1mj2y1joKe5KkCvrdgGuD21ykQAEO03zgr8cZppKFkjqf_TLju8WCKovYYyOdx2667OoPyDujQwhs0ZhIqdejGX0ls9_UN0rXivjMdJPAGCNm9ge_9x2WE5G7_LjlUeoAKvO1ZT4Ucuzq5AdcqM4ICCnR2hMZP8ngX7OiNF35gAe_tuHu4GsUWi6l8IeKMOFY-kwNWJM',
+      imageUrl: '/images/kitchen.png',
       altText: 'luxury modern kitchen',
       gridClass: 'col-span-12 md:col-span-8 row-span-2',
-      tags: ['A-102', 'DETALLE PLANTA']
+      //tags: ['A-102', 'DETALLE PLANTA']
     },
     {
       id: 2,
       category: 'Interiorismo',
       title: 'Baño Reformado',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAo5shYv2y2SkHWbx0G-UYWZS_bI5K-fPaH0odExKIo5KZc5vThDq8KfU1VBsiD6j-nhSeQPzrq5l5OatSp1ivV_PJeZqE5lnwRMSBIXdVjHyWBt4_Aw6jgIyWluhpyUdakB_zJfS00hthNyHtqXLyfoC53zRX_39MpQhKdNhtD03oJ4UizgNNLuOsr8OqW-moGywQnjzKh-7WNoJSo14wxmmmU4ZE4FMhOH9Wt4k5TJ9R5I4o32Y7fw4-U17H3WfKuah6niyaniOM',
+      imageUrl: '/images/bathroom.png',
       altText: 'minimalist renovated bathroom',
       gridClass: 'col-span-12 md:col-span-4 row-span-2'
     },
