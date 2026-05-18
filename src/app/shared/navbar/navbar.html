@@ -1,8 +1,11 @@
 <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
   <nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-    <a routerLink="/" class="flex items-center gap-3 cursor-pointer">
-      <img alt="Logo HCeballos" class="h-14 w-auto" src="/logo-hceballos.png" />
-      <span class="text-2xl font-extrabold tracking-tighter font-headline text-corporate-blue">HCeballos</span>
+    <a routerLink="/" class="flex items-center gap-3 cursor-pointer group">
+      <div class="relative transition-all duration-500 group-hover:scale-110">
+        <!-- Logo SVG adaptado al fondo oscuro -->
+        <img alt="Logo HCeballos" class="h-16 w-auto drop-shadow-[0_2px_4px_rgba(255,255,255,0.1)]"
+          src="/logo-original.png" />
+      </div>
     </a>
 
     <div class="hidden md:flex gap-8 items-center">
