@@ -1,21 +1,21 @@
 <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
   <nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-    <a routerLink="/" class="flex items-center gap-3 cursor-pointer group">
+    <a routerLink="/index.html" class="flex items-center gap-3 cursor-pointer group">
       <div class="relative transition-all duration-500 group-hover:scale-110">
         <!-- Logo SVG adaptado al fondo oscuro -->
         <img alt="Logo HCeballos" class="h-16 w-auto drop-shadow-[0_2px_4px_rgba(255,255,255,0.1)]"
-          src="/logo-original.png" />
+          src="logo-original.png" />
       </div>
     </a>
 
     <div class="hidden md:flex gap-8 items-center">
       <a class="font-headline font-semibold tracking-tight transition-colors border-b-2 pb-1 border-transparent text-white/60 hover:text-white"
-        routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/index.html" [routerLinkActiveOptions]="{exact: true}"
         routerLinkActive="!text-secondary !border-secondary">Inicio</a>
       <a class="font-headline font-semibold tracking-tight transition-colors border-b-2 pb-1 border-transparent text-white/60 hover:text-white"
-        routerLink="/galeria" routerLinkActive="!text-secondary !border-secondary">Galería</a>
+        routerLink="/galeria/index.html" routerLinkActive="!text-secondary !border-secondary">Galería</a>
       <a class="font-headline font-semibold tracking-tight transition-colors border-b-2 pb-1 border-transparent text-white/60 hover:text-white"
-        routerLink="/contacto" routerLinkActive="!text-secondary !border-secondary">Contacto</a>
+        routerLink="/contacto/index.html" routerLinkActive="!text-secondary !border-secondary">Contacto</a>
     </div>
 
     <div class="flex items-center gap-4">
@@ -28,11 +28,11 @@
   <!-- Mobile Menu -->
   <div *ngIf="mobileMenuOpen"
     class="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/5 shadow-xl flex flex-col px-6 py-4 gap-4">
-    <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors" routerLink="/"
+    <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors" routerLink="/index.html"
       [routerLinkActiveOptions]="{exact: true}" routerLinkActive="!text-secondary" (click)="toggleMenu()">Inicio</a>
     <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors"
-      routerLink="/galeria" routerLinkActive="!text-secondary" (click)="toggleMenu()">Galería</a>
+      routerLink="/galeria/index.html" routerLinkActive="!text-secondary" (click)="toggleMenu()">Galería</a>
     <a class="font-headline font-semibold text-lg text-white/80 hover:text-white transition-colors"
-      routerLink="/contacto" routerLinkActive="!text-secondary" (click)="toggleMenu()">Contacto</a>
+      routerLink="/contacto/index.html" routerLinkActive="!text-secondary" (click)="toggleMenu()">Contacto</a>
   </div>
 </header>

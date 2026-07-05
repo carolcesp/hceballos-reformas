@@ -38,7 +38,7 @@ export class GalleryComponent {
       id: 1,
       category: 'Proyecto Residencial',
       title: 'Cocina Moderna',
-      imageUrl: '/images/kitchen.png',
+      imageUrl: 'images/kitchen.png',
       altText: 'luxury modern kitchen',
       gridClass: 'col-span-12 md:col-span-8 row-span-2',
       //tags: ['A-102', 'DETALLE PLANTA']
@@ -47,7 +47,7 @@ export class GalleryComponent {
       id: 2,
       category: 'Interiorismo',
       title: 'Baño Reformado 1',
-      imageUrl: '/images/bathroom.png',
+      imageUrl: 'images/bathroom.png',
       altText: 'minimalist renovated bathroom',
       gridClass: 'col-span-12 md:col-span-4 row-span-2'
     },
@@ -55,7 +55,7 @@ export class GalleryComponent {
       id: 3,
       category: 'Interiorismo',
       title: 'Baño Reformado 2',
-      imageUrl: '/images/bathroom_2.png',
+      imageUrl: 'images/bathroom_2.png',
       altText: 'minimalist renovated bathroom',
       gridClass: 'col-span-12 md:col-span-4 row-span-2'
     },
@@ -63,7 +63,7 @@ export class GalleryComponent {
       id: 4,
       category: 'Proyecto Residencial',
       title: 'Cocina Chalet',
-      imageUrl: '/images/kitchen_2.png',
+      imageUrl: 'images/kitchen_2.png',
       altText: 'luxury modern kitchen',
       gridClass: 'col-span-12 md:col-span-8 row-span-2',
       //tags: ['A-102', 'DETALLE PLANTA']
@@ -71,14 +71,14 @@ export class GalleryComponent {
     {
       id: 5,
       title: 'Portal Reformado',
-      imageUrl: '/images/foto_portal.png',
+      imageUrl: 'images/foto_portal.png',
       altText: 'luxury bedroom',
       gridClass: 'col-span-12 md:col-span-4 row-span-2'
     },
     {
       id: 6,
       title: 'Armarios a medida',
-      imageUrl: '/images/armario.png',
+      imageUrl: 'images/armario.png',
       altText: 'modern home office',
       gridClass: 'col-span-12 md:col-span-4 row-span-2'
     },

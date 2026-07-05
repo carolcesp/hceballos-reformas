@@ -5,6 +5,9 @@ import { GalleryComponent } from './pages/gallery/gallery';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'index.html', component: HomeComponent },
   { path: 'contacto', component: ContactComponent },
-  { path: 'galeria', component: GalleryComponent }
+  { path: 'contacto/index.html', component: ContactComponent },
+  { path: 'galeria', component: GalleryComponent },
+  { path: 'galeria/index.html', component: GalleryComponent }
 ];

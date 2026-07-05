@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Rounded background matching dark theme -->
+  <rect width="512" height="512" rx="110" fill="#0c0d12"/>
+  
+  <!-- Subtle architectural grid lines for reforming/builder look -->
+  <path d="M 64,0 L 64,512 M 128,0 L 128,512 M 192,0 L 192,512 M 256,0 L 256,512 M 320,0 L 320,512 M 384,0 L 384,512 M 448,0 L 448,512" stroke="rgba(255,255,255,0.03)" stroke-width="2"/>
+  <path d="M 0,64 L 512,64 M 0,128 L 512,128 M 0,192 L 512,192 M 0,256 L 512,256 M 0,320 L 512,320 M 0,384 L 512,384 M 0,448 L 512,448" stroke="rgba(255,255,255,0.03)" stroke-width="2"/>
+  
+  <!-- Accent borders -->
+  <rect x="24" y="24" width="464" height="464" rx="86" stroke="rgba(255,255,255,0.05)" stroke-width="4"/>
+
+  <!-- Logo paths -->
+  <!-- "H" in corporate blue gradient -->
+  <defs>
+    <linearGradient id="hc-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0056b3"/>
+      <stop offset="100%" stop-color="#4ea5ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- H: Left vertical, center bar, and right vertical -->
+  <path d="M 120,130 L 120,382 M 120,256 L 270,256 M 270,130 L 270,382" stroke="url(#hc-blue-grad)" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- C: Curved path in Corporate Red -->
+  <path d="M 390,165 C 360,125 310,125 285,160 C 255,200 255,312 285,352 C 310,387 360,387 390,347" stroke="#e02928" stroke-width="54" stroke-linecap="round"/>
+</svg>
