@@ -40,8 +40,22 @@ htmlFiles.forEach(filePath => {
   
   console.log(`Processing ${relativePath} (depth: ${depth}, baseHref: ${baseHref})`);
   
-  // 1. Replace base href tag
-  content = content.replace(/<base\s+href="[^"]*">/gi, `<base href="${baseHref}">`);
+  // 1. Replace base href tag with dynamic base href script
+  const dynamicBaseHref = `<script>
+    (function() {
+      var host = window.location.hostname;
+      var path = window.location.pathname;
+      var base = '/';
+      if (host.indexOf('googleapis.com') !== -1 || path.indexOf('/www.hceballos.com') === 0) {
+        var segments = path.split('/');
+        if (segments.length > 1 && segments[1]) {
+          base = '/' + segments[1] + '/';
+        }
+      }
+      document.write('<base href="' + base + '">');
+    })();
+  </script>`;
+  content = content.replace(/<base\s+href="[^"]*">/gi, dynamicBaseHref);
   
   // 2. Replace absolute internal routes to relative index.html routes
   content = content
